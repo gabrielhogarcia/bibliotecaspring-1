@@ -9,13 +9,17 @@
     <body>
         <div class="container">
             <h1>Atualizar Livro</h1>
+            <hr>
             <a href="/livro" class="btn btn-primary">Voltar</a>
+            <hr>
             <form action="/update" method="post">
                 <input type="hidden" name="id" value="${livro.id}" />
                 <div class="form-goup">
                     <label for="titulo">Título</label>
                     <input type="text" name="titulo" class="form-control" value="${livro.titulo}">
-                    <input type="text" name="titulo" class="form-control" value="${livro.ibns}">
+                    <br>
+                    <label for="titulo">ISBN</label>
+                    <input type="text" name="isbn" class="form-control" value="${livro.isbn}">
                 </div>
                 <br>
                 <button type="submit" class="btn btn-success">Salvar</button>
