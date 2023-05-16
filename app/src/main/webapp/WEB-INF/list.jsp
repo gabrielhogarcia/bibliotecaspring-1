@@ -4,23 +4,27 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <title>Livros</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
     </head>
     <body>
         <div class="container">
             <h1>Livros</h1>
+            <hr>
             <a href="/insert" class="btn btn-primary">Novo Livro</a>
+            <hr>
             <table>
                 <tr>
                     <th>Id</th>
                     <th>Título</th>
-                    <th>&nbsp</th>
+                    <th>ISBN</th>
+                    <th>&nbsp;</th>
                 </tr>
                 <c:forEach var="item" items="${livros}">
                     <tr>
-                        <td>&{item.id}</td>
-                        <td>&{item.titulo}</td>
+                        <td>${item.id}</td>
+                        <td>${item.titulo}</td>
+                        <td>${item.isbn}</td>
                         <td>
                             <a href="/update?id=${item.id}" class="btn btn-warning">Editar</a>
                             <a href="/delete?id=${item.id}" class="btn btn-danger">Excluir</a>
