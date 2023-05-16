@@ -34,7 +34,7 @@ public class GeneroController {
         Genero genero = new Genero();
         genero.setNome(nome);
         generoRepo.save(genero);
-        return "redirect:/listGenero";
+        return "redirect:/genero";
     }
 
     @RequestMapping("/updateGenero")

@@ -14,7 +14,7 @@
             <h1>Deseja remover o genero "${genero.nome}"?</h1>
             <form action="/deleteGenero" method="post">
                 <input type="hidden" name="id" value="${genero.id}" />
-                <button type="submit" class="btn btn-dange">Excluir</button>
+                <button type="submit" class="btn btn-danger">Excluir</button>
             </form>
 
         </div>

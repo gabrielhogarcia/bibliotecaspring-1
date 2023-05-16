@@ -10,13 +10,13 @@
         <div class="container">
             <h1>Atualizar Genero</h1>
             <hr>
-            <a href="/generoGenero" class="btn btn-primary">Voltar</a>
+            <a href="/genero" class="btn btn-primary">Voltar</a>
             <hr>
-            <form action="/update" method="post">
+            <form action="/updateGenero" method="post">
                 <input type="hidden" name="id" value="${genero.id}" />
                 <div class="form-goup">
                     <label for="nome">Nome</label>
-                    <input type="text" name="titulo" class="form-control" value="${genero.nome}">
+                    <input type="text" name="nome" class="form-control" value="${genero.nome}">
                 </div>
                 <br>
                 <button type="submit" class="btn btn-success">Salvar</button>
