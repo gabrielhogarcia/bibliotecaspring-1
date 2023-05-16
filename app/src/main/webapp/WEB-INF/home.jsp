@@ -7,6 +7,10 @@
     </head>
     <body>
         <h1>Olá Spring!!!</h1>
+        <a href="./delete.jsp">Delete</a>
+        <a href="./insert.jsp">Insert</a>
+        <a href="./list.jsp">List</a>
+        <a href="./update.jsp">Update</a>
     </body>
 </html>
 
